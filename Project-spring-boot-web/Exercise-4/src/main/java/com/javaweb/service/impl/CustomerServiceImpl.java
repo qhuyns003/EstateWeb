@@ -13,6 +13,7 @@ import com.javaweb.repository.UserRepository;
 import com.javaweb.service.CustomerService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -35,8 +36,9 @@ public class CustomerServiceImpl implements CustomerService {
     UserRepository userRepository;
     @Override
     public List<CustomerSearchResponse> findCustomer(CustomerSearchRequest request, Pageable pageable) {
-        List<CustomerEntity> list = customerRepository.findCustomer(request,pageable);
-        List<CustomerSearchResponse> responseList = customerConverter.toResponseList(list);
+        Page<CustomerEntity> listPage = customerRepository.findCustomer(request,pageable);
+        List<CustomerEntity> list = listPage.getContent();
+        List<CustomerSearchResponse> responseList = customerConverter.toResponseList(list,(int)listPage.getTotalElements());
         return responseList;
     }
 

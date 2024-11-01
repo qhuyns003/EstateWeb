@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 public class DisplayTagUtils {
 
     //private static final Logger log = Logger.getLogger(DisplayTagUtils.class);
-
+   // lấy trang đang đứng từ httprequest
     public static void of(HttpServletRequest request, AbstractDTO dto) {
         if (dto != null) {
             String sPage = request.getParameter(

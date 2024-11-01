@@ -16,14 +16,21 @@ public class AbstractDTO<T> implements Serializable {
     private String modifiedBy;
 
     // thông tin về phân trang
+    // tổng số bản ghi trong 1 trang ( tự thiết lập)
     private int maxPageItems = 2;
+    // trang đang đứng hiên tại ( mặc định là 1 được request update lại)
     private int page = 1;
+    // list kết quả cần đẩy ra view
     private List<T> listResult = new ArrayList<>();
+    // tong số bản ghi của truy vấn ( để tạo tổng số trang cho truy vấn )
     private int totalItems = 0;
+
+    // co le khong can
     private String tableId = "tableList";
-    private Integer limit;
-    private Integer totalPage;
-    private Integer totalItem;
+    //
+//    private Integer limit;
+//    private Integer totalPage;
+//    private Integer totalItem;
     private String searchValue;
 
     public Long getId() {
@@ -102,6 +109,15 @@ public class AbstractDTO<T> implements Serializable {
         this.totalItems = totalItems;
     }
 
+
+//    public Long getTotalItems() {
+//        return totalItems;
+//    }
+//
+//    public void setTotalItems(Long totalItems) {
+//        this.totalItems = totalItems;
+//    }
+
     public String getTableId() {
         return tableId;
     }
@@ -110,29 +126,29 @@ public class AbstractDTO<T> implements Serializable {
         this.tableId = tableId;
     }
 
-    public Integer getLimit() {
-        return limit;
-    }
-
-    public void setLimit(Integer limit) {
-        this.limit = limit;
-    }
-
-    public Integer getTotalPage() {
-        return totalPage;
-    }
-
-    public void setTotalPage(Integer totalPage) {
-        this.totalPage = totalPage;
-    }
-
-    public Integer getTotalItem() {
-        return totalItem;
-    }
-
-    public void setTotalItem(Integer totalItem) {
-        this.totalItem = totalItem;
-    }
+//    public Integer getLimit() {
+//        return limit;
+//    }
+//
+//    public void setLimit(Integer limit) {
+//        this.limit = limit;
+//    }
+//
+//    public Integer getTotalPage() {
+//        return totalPage;
+//    }
+//
+//    public void setTotalPage(Integer totalPage) {
+//        this.totalPage = totalPage;
+//    }
+//
+//    public Integer getTotalItem() {
+//        return totalItem;
+//    }
+//
+//    public void setTotalItem(Integer totalItem) {
+//        this.totalItem = totalItem;
+//    }
 
     public String getSearchValue() {
         return searchValue;

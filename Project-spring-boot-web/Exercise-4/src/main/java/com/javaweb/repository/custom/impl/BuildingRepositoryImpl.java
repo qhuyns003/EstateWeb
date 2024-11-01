@@ -4,6 +4,8 @@ import com.javaweb.entity.BuildingEntity;
 import com.javaweb.model.request.BuildingSearchRequest;
 import com.javaweb.repository.custom.BuildingRepositoryCustom;
 import com.javaweb.utils.StringUtils;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 
@@ -87,7 +89,7 @@ public class BuildingRepositoryImpl implements BuildingRepositoryCustom {
 
     }
     @Override
-    public List<BuildingEntity> findBuilding(BuildingSearchRequest buildingSearchRequest, Pageable pageable) {
+    public Page<BuildingEntity> findBuilding(BuildingSearchRequest buildingSearchRequest, Pageable pageable) {
         StringBuilder sql= new StringBuilder();
         sql.append("SELECT building.* FROM building ");
         joinTable(buildingSearchRequest,sql);
@@ -95,12 +97,15 @@ public class BuildingRepositoryImpl implements BuildingRepositoryCustom {
         normalQuerry(buildingSearchRequest,sql);
         specialQuerry(buildingSearchRequest,sql);
         sql.append(" group by building.id ");
+        Query queryAll = entityManager.createNativeQuery(sql.toString(),BuildingEntity.class);
+        List<BuildingEntity> listAll = queryAll.getResultList();
+         long total = listAll.size();
         sql.append(" limit ").append(pageable.getPageSize()).append(" offset ").append(pageable.getOffset());
         Query query = entityManager.createNativeQuery(sql.toString(),BuildingEntity.class);
         List<BuildingEntity> list = query.getResultList();
 
 
-        return list;
+        return new PageImpl<>(list, pageable, total);
     }
 
     @Override

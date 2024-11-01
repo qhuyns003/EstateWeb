@@ -62,6 +62,8 @@ public class UserService implements IUserService {
         for (UserEntity userEntity : newsEntities) {
             UserDTO userDTO = userConverter.convertToDto(userEntity);
             userDTO.setRoleCode(userEntity.getRoles().get(0).getCode());
+//            userDTO.setTotalPage(users.getTotalPages());
+            userDTO.setTotalItems((int)users.getTotalElements());
             result.add(userDTO);
         }
         return result;

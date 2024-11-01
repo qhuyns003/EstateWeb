@@ -14,10 +14,11 @@ import java.util.List;
 public class CustomerConverter {
     @Autowired
     ModelMapper modelMapper;
-    public List<CustomerSearchResponse> toResponseList(List<CustomerEntity> customerEntity) {
+    public List<CustomerSearchResponse> toResponseList(List<CustomerEntity> customerEntity,int total) {
         List<CustomerSearchResponse> customerSearchResponseList = new ArrayList<>();
         for (CustomerEntity customerEntity1 : customerEntity) {
             CustomerSearchResponse customerSearchResponse = modelMapper.map(customerEntity1, CustomerSearchResponse.class);
+            customerSearchResponse.setTotalItems(total);
             customerSearchResponseList.add(customerSearchResponse);
         }
         return customerSearchResponseList;

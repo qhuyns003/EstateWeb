@@ -6,10 +6,7 @@ import com.javaweb.model.request.CustomerSearchRequest;
 import com.javaweb.repository.CustomerRepository;
 import com.javaweb.repository.custom.CustomerRepositoryCustom;
 import com.javaweb.utils.StringUtils;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.*;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -48,7 +45,7 @@ public class CustomerRepositoryImpl implements CustomerRepositoryCustom {
 
     };
     @Override
-    public List<CustomerEntity> findCustomer(CustomerSearchRequest searchRequest,Pageable pageable) {
+    public Page<CustomerEntity> findCustomer(CustomerSearchRequest searchRequest,Pageable pageable) {
         StringBuilder sql = new StringBuilder();
         sql.append("select customer.* from customer ");
 
@@ -57,9 +54,13 @@ public class CustomerRepositoryImpl implements CustomerRepositoryCustom {
         sql.append(" and customer.is_active = 1 ");
         specialQuerry(searchRequest, sql);
         sql.append(" group by customer.id ");
+        Query queryAll=entityManager.createNativeQuery(sql.toString(), CustomerEntity.class);
+        List<CustomerEntity> listAll= queryAll.getResultList();
+        int total=listAll.size();
         sql.append(" limit ").append(pageable.getPageSize()).append(" offset ").append(pageable.getOffset());
         Query query=entityManager.createNativeQuery(sql.toString(), CustomerEntity.class);
-        return query.getResultList();
+        List<CustomerEntity> list= query.getResultList();
+        return new PageImpl<>(list, pageable, total);
     }
 
     @Override
