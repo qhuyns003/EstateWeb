@@ -138,10 +138,22 @@
             data: JSON.stringify(data),
             success: function (res) {
                 $('#loading_image').hide();
-                window.location.href = "<c:url value='/admin/user-edit-"+res.id+"?message=insert_success'/>";
+                alert("Thành công")
+                <%--window.location.href = "<c:url value='/admin/user-edit-"+res.id+"?message=insert_success'/>";--%>
             },
             error: function (res) {
-                window.location.href = "<c:url value='/admin/user-edit-"+res.id+"?message=error_system'/>";
+                <%--window.location.href = "<c:url value='/admin/user-edit-"+res.id+"?message=error_system'/>";--%>
+                 if (res.status === 400) {
+                    try {
+                        const errorResponse = JSON.parse(res.responseText);
+                        errorMessage = errorResponse.message;
+                    } catch (e) {
+                        // Nếu không thành công, sử dụng phản hồi văn bản thuần túy
+                        errorMessage = res.responseText;
+                    }
+
+                    alert( errorMessage);
+                }
             }
         });
     }
@@ -154,10 +166,22 @@
             contentType: 'application/json',
             data: JSON.stringify(data),
             success: function (res) {
-                window.location.href = "<c:url value='/admin/user-edit-"+res.id+"?message=update_success'/>";
+                alert("Thành công")
+                <%--window.location.href = "<c:url value='/admin/user-edit-"+res.id+"?message=update_success'/>";--%>
             },
             error: function (res) {
-                window.location.href = "<c:url value='/admin/user-edit-"+id+"?message=error_system'/>";
+                <%--window.location.href = "<c:url value='/admin/user-edit-"+id+"?message=error_system'/>";--%>
+                 if (res.status === 400) {
+                    try {
+                        const errorResponse = JSON.parse(res.responseText);
+                        errorMessage = errorResponse.message;
+                    } catch (e) {
+                        // Nếu không thành công, sử dụng phản hồi văn bản thuần túy
+                        errorMessage = res.responseText;
+                    }
+
+                    alert( errorMessage);
+                }
             }
         });
     }
@@ -169,10 +193,22 @@
             dataType: 'json',
             success: function (res) {
                 $('#loading_image').hide();
-                window.location.href = "<c:url value='/admin/user-edit-"+res.id+"?message=reset_password_success'/>";
+                alert("Thành công")
+                <%--window.location.href = "<c:url value='/admin/user-edit-"+res.id+"?message=reset_password_success'/>";--%>
             },
             error: function (res) {
-                window.location.href = "<c:url value='/admin/user-edit-"+id+"?message=error_system'/>";
+                <%--window.location.href = "<c:url value='/admin/user-edit-"+id+"?message=error_system'/>";--%>
+                 if (res.status === 400) {
+                    try {
+                        const errorResponse = JSON.parse(res.responseText);
+                        errorMessage = errorResponse.message;
+                    } catch (e) {
+                        // Nếu không thành công, sử dụng phản hồi văn bản thuần túy
+                        errorMessage = res.responseText;
+                    }
+
+                    alert( errorMessage);
+                }
             }
         });
     }
