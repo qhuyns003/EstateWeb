@@ -1,5 +1,6 @@
 package com.javaweb.controller.web;
 
+import com.javaweb.enums.districtCode;
 import com.javaweb.model.request.BuildingSearchRequest;
 import com.javaweb.utils.DistrictCode;
 import org.springframework.security.core.Authentication;
@@ -22,7 +23,7 @@ public class HomeController {
 	public ModelAndView homePage(BuildingSearchRequest buildingSearchRequest, HttpServletRequest request) {
 		ModelAndView mav = new ModelAndView("web/home");
         mav.addObject("modelSearch", buildingSearchRequest);
-        mav.addObject("districts", DistrictCode.type());
+        mav.addObject("districts", districtCode.type());
 		return mav;
 	}
 

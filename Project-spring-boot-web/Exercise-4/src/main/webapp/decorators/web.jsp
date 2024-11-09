@@ -12,6 +12,11 @@
 
 	<!-- Custom styles for this template -->
 	<link href="web/css/small-business.css" rel="stylesheet" type="text/css">
+
+<%--	<script src="admin/assets/js/jqueryvalidate/jquery.validate.js/jquery.validate.min.js"></script>--%>
+
+
+
 </head>
 <body>
 	<!-- Navigation -->
@@ -25,5 +30,10 @@
 	<!-- Bootstrap core JavaScript -->
 	<script src="web/vendor/jquery/jquery.min.js"></script>
 	<script src="web/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
 </body>
 </html>

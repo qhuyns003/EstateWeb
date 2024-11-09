@@ -173,7 +173,9 @@
                 <%--window.location.href = "<c:url value='/admin/user-edit-"+id+"?message=error_system'/>";--%>
                  if (res.status === 400) {
                     try {
+                        // trg hop responseText co dang json
                         const errorResponse = JSON.parse(res.responseText);
+
                         errorMessage = errorResponse.message;
                     } catch (e) {
                         // Nếu không thành công, sử dụng phản hồi văn bản thuần túy

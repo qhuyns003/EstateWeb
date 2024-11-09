@@ -66,12 +66,12 @@
 
                             <div class="form-outline form-white mb-2">
                                 <label class="form-label" >Password</label>
-                                <input type="text" name="password" class="form-control form-control-lg" />
+                                <input type="password" name="password" class="form-control form-control-lg" />
                             </div>
 
                             <div class="form-outline form-white mb-2">
                                 <label class="form-label" >Repeat your password</label>
-                                <input type="text" name="passwordRepeat" class="form-control form-control-lg" />
+                                <input type="password" name="passwordRepeat" class="form-control form-control-lg" />
                             </div>
 
 <%--                            <div class="form-check d-flex justify-content-center mb-2">--%>

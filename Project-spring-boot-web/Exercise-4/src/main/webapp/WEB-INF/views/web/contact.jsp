@@ -9,6 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liên hệ</title>
+
+
+
 </head>
 <body>
 <div class="page-wrapper">
@@ -160,7 +163,7 @@
                             </div>
                             <div class="col-12 col-md-4 text-center">
                                 <div class="icon-footer">
-                                    <img src="https://bizweb.dktcdn.net/100/328/362/themes/894751/assets/place_phone.png?1676257083798 alt="-">
+                                    <img src="https://bizweb.dktcdn.net/100/328/362/themes/894751/assets/place_phone.png?1676257083798" alt="">
                                 </div>
                                 <div class="content-center-footer">
                                     <p class="mb-1 mt-3">Hotline</p>
@@ -240,6 +243,16 @@
 // bi hoi script o dau
 <script src="web/vendor/jquery/jquery.min.js"></script>
 <script src="web/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
 <script>
     $('#sendContact').click(function (e) {
         e.preventDefault();
@@ -253,11 +266,29 @@
                 alert("Dữ liệu đã được gửi thành công ");
             },
             error: function (error) {
-                // Xử lý trường hợp lỗi
+                // Xử lý trường hợp
+                alert(error.responseText)
 
             }
         });
     });
+        // $(function() {
+        //     $("form[name='contactWithUs']").validate({
+        //         rules: {
+        //             fullName: "required",
+        //             phone: "required",
+        //             email:"required"
+        //         },
+        //         messages: {
+        //             fullName: "Không để trống",
+        //             phone: "Không để trống",
+        //             email:"Không để trống"
+        //         },
+        //
+        //     });
+        // });
+
+
 </script>
 </body>
 </html>

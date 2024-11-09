@@ -8,6 +8,7 @@
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="style.css" rel="stylesheet" type="text/css" media="all"/>
+
 </head>
 <body id="LoginForm" style="background-color: #FFFFFF">
     <dec:body/>

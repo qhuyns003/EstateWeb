@@ -73,7 +73,7 @@
                                                 <div class="form-group">
                                                     <label class="col-sm-2 control-label">
                                                             <%--<spring:message code="label.search.value"/>--%>
-                                                        Giá trị cần tìm
+                                                        Tên hoặc UserName
                                                     </label>
                                                     <div class="col-sm-8">
                                                         <div class="fg-line">
@@ -112,7 +112,7 @@
                                             <button id="btnDelete" type="button" disabled
                                                     class="dt-button buttons-html5 btn btn-white btn-primary btn-bold"
                                                     data-toggle="tooltip"
-                                                    title="Xóa bài viết" onclick="warningBeforeDelete()">
+                                                    title="Xóa người dùng" onclick="warningBeforeDelete()">
 															<span>
 																<i class="fa fa-trash-o bigger-110 pink"></i>
 															</span>
@@ -192,10 +192,12 @@
             contentType: 'application/json',
             data: JSON.stringify(data),
             success: function (res) {
+                alert("Thành công");
                 window.location.href = "<c:url value='/admin/user-list?message=delete_success'/>";
             },
             error: function (res) {
                 console.log(res);
+                alert("Thất bại");
                 window.location.href = "<c:url value='/admin/user-list?message=error_system'/>";
             }
         });

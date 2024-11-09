@@ -122,13 +122,15 @@
                 data: JSON.stringify(data),
                 success: function (res) {
                     if (res == 'update_success') {
+                        alert("Thành công")
                         window.location.href = "<c:url value='/admin/profile-password?message=update_success'/>";
                     } else if (res == 'change_password_fail') {
+                        alert("Thất bại")
                         window.location.href = "<c:url value='/admin/profile-password?message=change_password_fail'/>";
                     }
                 },
                 error: function (res) {
-                    console.log(res);
+                    alert("Thất bại")
                     window.location.href = "<c:url value='/admin/profile-password?message=error_system'/>";
                 }
             });

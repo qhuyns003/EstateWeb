@@ -88,11 +88,12 @@
                 contentType: 'application/json',
                 data: JSON.stringify(data),
                 success: function (res) {
+                    alert("Thành công")
                     window.location.href = "<c:url value='/admin/profile/"+res.userName+"?message=update_success'/>";
                 },
                 error: function (res) {
-                    console.log(res);
-                    window.location.href = "<c:url value='/admin/profile/"+username+"?message=error_system'/>";
+                    alert("Thất bại")
+                    window.location.href = "<c:url value='/admin/profile/"+res.username+"?message=error_system'/>";
                 }
             });
         }
