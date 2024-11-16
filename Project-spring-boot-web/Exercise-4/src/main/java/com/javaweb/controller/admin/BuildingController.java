@@ -65,7 +65,13 @@ public class BuildingController {
         }
         List<BuildingSearchResponse> responseList = buildingService.findBuilding(building, PageRequest.of(building.getPage() - 1, building.getMaxPageItems()));
         building.setListResult(responseList);
-        building.setTotalItems(responseList.get(0).getTotalItems());
+
+        if(responseList.size()==0){
+            building.setTotalItems(0);
+        }
+        else{
+            building.setTotalItems(responseList.get(0).getTotalItems());
+        }
         mav.addObject("building", building);
         Map<Long,String> map = userService.getAllUsers();
         mav.addObject("listStaff", map);

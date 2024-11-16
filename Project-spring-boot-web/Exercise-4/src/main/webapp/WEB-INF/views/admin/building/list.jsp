@@ -153,8 +153,8 @@
 
                                                 </div>
                                                 <div class="col-xs-3">
+                                                    <label class="name">Giá thuê đến</label>
                                                     <form:input class="form-control" path="rentPriceTo"/>
-
                                                 </div>
 
                                             </div>
