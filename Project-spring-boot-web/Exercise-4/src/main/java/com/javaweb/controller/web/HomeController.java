@@ -76,4 +76,12 @@ public class HomeController {
         ModelAndView mav = new ModelAndView("register");
         return mav;
     }
+
+    @RequestMapping(value = "/dang-cap-nhat", method = RequestMethod.GET)
+    public ModelAndView comingSoon() {
+        ModelAndView mav = new ModelAndView("/web/errorPage");
+        return mav;
+    }
+
+
 }

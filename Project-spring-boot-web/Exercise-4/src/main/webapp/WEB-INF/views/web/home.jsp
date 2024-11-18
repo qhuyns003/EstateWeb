@@ -153,10 +153,12 @@
                     </div>
                     <div class="col-12 col-md-3 ">
                         <div class="search-btn">
-                            <button class="search-btn-text">
-                                <i class="fa-solid fa-magnifying-glass search-btn-icon"></i>
-                                <span>Tìm kiếm nhanh</span>
-                            </button>
+                           <a href="dang-cap-nhat">
+                               <button class="search-btn-text">
+                                   <i class="fa-solid fa-magnifying-glass search-btn-icon"></i>
+                                   <span>Tìm kiếm nhanh</span>
+                               </button>
+                           </a>
                         </div>
                     </div>
                 </div>
@@ -753,44 +755,46 @@
             </div>
         </div>
         <!-- CONTENT 5 -->
-        <section class="section-subscribe mt-5">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="title_module_main a-center">
-                        <h2>Nhận thông tin nhà đất miễn phí</h2>
-                        <p class="mt-15">Cập nhật hơn 1.000.000 thông tin mua bán và
-                            giao dịch nhà
-                            đất mỗi
-                            tháng tại 63 tỉnh thành phố trên cả nước</p>
-                    </div>
-                </div>
-                <div class="wrap-subscribe text-center">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-                            <div class="module-get">
-                                <div class="inner-get">
-                                    <div class="form-inner">
-                                        <form class="a-center"
-                                              action="//dkt.us13.list-manage.com/subscribe/post?u=0bafe4be7e17843051883e746&amp;id=3bdd6e9e3b"
-                                              method="post" id="mc-embedded-subscribe-form"
-                                              name="mc-embedded-subscribe-form" target="_blank">
-                                            <input type="email" value="" placeholder="Nhập địa chỉ email của bạn.."
-                                                   name="EMAIL" id="mail"
-                                                   aria-label="general.newsletter_form.newsletter_email">
-                                            <button class="button-subscribe button-45 subscribe" name="subscribe"
-                                                    id="subscribe">NHẬN TIN
-                                                MIỄN
-                                                PHÍ</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+<%--        <section class="section-subscribe mt-5">--%>
+<%--            <div class="container">--%>
+<%--                <div class="row text-center">--%>
+<%--                    <div class="title_module_main a-center">--%>
+<%--                        <h2>Nhận thông tin nhà đất miễn phí</h2>--%>
+<%--                        <p class="mt-15">Cập nhật hơn 1.000.000 thông tin mua bán và--%>
+<%--                            giao dịch nhà--%>
+<%--                            đất mỗi--%>
+<%--                            tháng tại 63 tỉnh thành phố trên cả nước</p>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--&lt;%&ndash;                <div class="wrap-subscribe text-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <div class="row justify-content-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <div class="module-get">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <div class="inner-get">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <div class="form-inner">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                        <form class=""&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                              action=""&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                              method="" id=""&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                              name="" >&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                            <input type="email" value="" placeholder="Nhập địa chỉ email của bạn.."&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                                   name="EMAIL" id="mail"&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                                   >&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                            <a href="/dang-cap-nhat">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                                <button class="button-subscribe button-45 subscribe" name="subscribe"&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                                        id="subscribe">NHẬN TIN&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                                    MIỄN&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                                    PHÍ</button>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                            </a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                        </form>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </div>&ndash;%&gt;--%>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<%--&lt;%&ndash;                        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--            </div>--%>
+<%--        </section>--%>
         <!-- CONTENT 6 - NEW  -->
 
         <!-- FOOTER  -->
@@ -862,43 +866,34 @@
                     <div class="row">
                         <div class="col-12 col-md-3">
                             <h4 class="title-item-bottom-footer">Thông tin công ty</h4>
-                            <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                                chủ</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                                sản</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                            <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Giới thiệu chung</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Lĩnh vực hoạt động</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Tầm nhìn và sứ mệnh</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Cấu trúc tổ chức</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Thành tựu và giải thưởng</a></p>
                         </div>
                         <div class="col-12 col-md-3">
                             <h4 class="title-item-bottom-footer">Chính sách hoạt động</h4>
-                            <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                                chủ</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                                sản</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                            <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Chính sách bán hàng và tiếp thị</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Chính sách chất lượng</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Chính sách an toàn và bảo mật</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Chính sách chăm sóc khách hàng</a></p>
+
                         </div>
                         <div class="col-12 col-md-3">
                             <h4 class="title-item-bottom-footer">Hỗ trợ khách hàng</h4>
-                            <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                                chủ</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                                sản</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                            <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Tư vấn bất động sản</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Hỗ trợ pháp lý</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Dịch vụ tài chính</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Dịch vụ khảo sát và thẩm định giá</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Hỗ trợ sau giao dịch</a></p>
                         </div>
                         <div class="col-12 col-md-3">
                             <h4 class="title-item-bottom-footer">Kết nối với chúng tôi</h4>
-                            <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                                chủ</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                                sản</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                            <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                            <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Fanpage</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Email</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Hotline</a></p>
+                            <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Địa chỉ</a></p>
                         </div>
                     </div>
                 </div>

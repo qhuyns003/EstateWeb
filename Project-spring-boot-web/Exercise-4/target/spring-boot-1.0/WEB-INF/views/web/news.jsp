@@ -88,14 +88,14 @@
             <div class="row">
                 <div class="col-12 col-md-4">
                     <div class="danhmuc mt-5">
-                        <h2 class="title-h2">Danh mục tin tức</h2>
-                        <div class="item-danhmuc">
-                            <p class=""><a href="">Trang chủ</a></p>
-                            <p><a href="">Giới thiệu</a></p>
-                            <p><a href="">Dự án bất động sản</a></p>
-                            <p><a href="">Tin tức</a></p>
-                            <p><a href="">Liên hệ</a></p>
-                        </div>
+<%--                        <h2 class="title-h2">Danh mục tin tức</h2>--%>
+<%--                        <div class="item-danhmuc">--%>
+<%--                            <p class=""><a href="">Trang chủ</a></p>--%>
+<%--                            <p><a href="">Giới thiệu</a></p>--%>
+<%--                            <p><a href="">Dự án bất động sản</a></p>--%>
+<%--                            <p><a href="">Tin tức</a></p>--%>
+<%--                            <p><a href="">Liên hệ</a></p>--%>
+<%--                        </div>--%>
                         <h2 class="title-h2">Tin tức xem nhiều</h2>
                         <div class="item-tintuc">
                             <div class="row">
@@ -103,7 +103,7 @@
                                     <img src="https://bizweb.dktcdn.net/thumb/large/100/328/362/articles/vinpearl-ha-long-bay-resort-0.jpg?v=1534491225390" alt="">
                                 </div>
                                 <div class="col-12 col-md-7">
-                                    <p class="title-tintuc"><a href="">Xuất hiện căn hộ cao cấp làm mê mẩn giới
+                                    <p class="title-tintuc"><a href="http://www.diaocdonganh.vn/2020/04/xuat-hien-can-ho-cao-cap-lam-me-man.html">Xuất hiện căn hộ cao cấp làm mê mẩn giới
                                         thượng lưu</a>
                                     </p>
                                 </div>
@@ -114,7 +114,7 @@
                                     <img src="https://bizweb.dktcdn.net/thumb/large/100/328/362/articles/a7.jpg?v=1534491036947" alt="">
                                 </div>
                                 <div class="col-12 col-md-7">
-                                    <p class="title-tintuc"><a href="">Tiếp tục rà soát, đánh giá những bất cập liên
+                                    <p class="title-tintuc"><a href="https://dangcongsan.vn/phap-luat/tiep-tuc-ra-soat-danh-gia-nhung-bat-cap-lien-quan-den-tich-tu-dat-dai-494253.html">Tiếp tục rà soát, đánh giá những bất cập liên
                                         quan đến
                                         tích tụ đất đai</a>
                                     </p>
@@ -126,7 +126,7 @@
                                     <img src="https://bizweb.dktcdn.net/thumb/large/100/328/362/articles/36-1-kmey.jpg?v=1534490952150" alt="">
                                 </div>
                                 <div class="col-12 col-md-7">
-                                    <p class="title-tintuc"><a href="">Hà Nội phê duyệt chỉ giới đường đỏ tuyến
+                                    <p class="title-tintuc"><a href="https://giaothonghanoi.kinhtedothi.vn/the-thao/phe-duyet-chi-gioi-duong-do-tuyen-duong-khu-do-thi-gia-lam-toi-ga-phu-thi-11.html">Hà Nội phê duyệt chỉ giới đường đỏ tuyến
                                         đường khu đô
                                         thị Gia Lâm tới ga Phú Thị</a>
                                     </p>
@@ -135,10 +135,10 @@
                             <div class="border border-bottom mt-3 "></div>
                             <div class="row mt-2">
                                 <div class="col-12 col-md-5">
-                                    <img src="https://bizweb.dktcdn.net/thumb/large/100/328/362/articles/a7.jpg?v=1534491036947" alt="">
+                                    <img src="https://vinhomecitys.com/wp-content/uploads/2023/02/bat-dong-san-khanh-hoa-thong-tin-danh-gia-co-hoi-dau-tu.jpeg" alt="">
                                 </div>
                                 <div class="col-12 col-md-7">
-                                    <p class="title-tintuc"><a href="">Chính sách ưu đãi có một không hai khi đầu tư
+                                    <p class="title-tintuc"><a href="https://cafef.vn/chinh-sach-uu-dai-co-mot-khong-hai-khi-dau-tu-bds-nghi-duong-tai-khanh-hoa-201808160759251.chn">Chính sách ưu đãi có một không hai khi đầu tư
                                         BĐS nghỉ
                                         dưỡng tại Khánh Hòa</a>
                                     </p>
@@ -158,7 +158,7 @@
                             <div class="content_blog_full">
                                 <h3><a class="title-h3" style="font-size: 20px; font-weight:700;"
                                        title="Xuất hiện căn hộ cao cấp làm mê mẩn giới thượng lưu"
-                                       href="/xuat-hien-can-ho-cao-cap-lam-me-man-gioi-thuong-luu">Xuất
+                                       href="http://www.diaocdonganh.vn/2020/04/xuat-hien-can-ho-cao-cap-lam-me-man.html">Xuất
                                     hiện căn hộ cao cấp làm mê mẩn giới thượng lưu</a></h3>
                                 <span class="time_post f">
                                         <i style="color: indianred" class="fa fa-calendar icon-tintuc"></i>&nbsp;Thứ
@@ -176,7 +176,7 @@
                                         tưởng ngay “siêu phẩm” với thành phố Venice xinh đẹp củ...
                                     </p>
                                     <button class="btn btn-primary px-4">
-                                        <a href="./ChiTiet.html" style="color:#fff">Xem chi
+                                        <a href="http://www.diaocdonganh.vn/2020/04/xuat-hien-can-ho-cao-cap-lam-me-man.html" style="color:#fff">Xem chi
                                             tiết</a>
                                     </button>
                                 </div>
@@ -192,7 +192,7 @@
                         <div class="col-12 col-md-8">
                             <h3><a class="title-h3" style="font-size: 20px; font-weight:700;"
                                    title=" Tiếp tục rà soát, đánh giá những bất cập liên quan đến tích tụ đất đai"
-                                   href="/tiep-tuc-ra-soat-danh-gia-nhung-bat-cap-lien-quan-den-tich-tu-dat-dai">Hà
+                                   href="https://giaothonghanoi.kinhtedothi.vn/the-thao/phe-duyet-chi-gioi-duong-do-tuyen-duong-khu-do-thi-gia-lam-toi-ga-phu-thi-11.html">Hà
                                 Nội phê duyệt chỉ giới đường đỏ tuyến đường khu đô thị Gia Lâm tới ga Phú
                                 Thị</a></h3>
                             <span class="time_post f"><i style="color: indianred" class="fa fa-calendar"></i>&nbsp;Thứ
@@ -214,12 +214,12 @@
                     <div class="row mt-4">
                         <div class="col-12 col-md-4">
                             <img style="width: 100%; max-height: 200px;" class="image-tintuc"
-                                 src="https://bizweb.dktcdn.net/thumb/large/100/328/362/articles/36-1-kmey.jpg?v=1534490952150" alt="">
+                                 src="https://vinhomecitys.com/wp-content/uploads/2023/02/bat-dong-san-khanh-hoa-thong-tin-danh-gia-co-hoi-dau-tu.jpeg" alt="">
                         </div>
                         <div class="col-12 col-md-8">
                             <h3><a class="title-h3" style="font-size: 20px; font-weight:700;"
                                    title=" Tiếp tục rà soát, đánh giá những bất cập liên quan đến tích tụ đất đai"
-                                   href="/tiep-tuc-ra-soat-danh-gia-nhung-bat-cap-lien-quan-den-tich-tu-dat-dai">Chính
+                                   href="https://cafef.vn/chinh-sach-uu-dai-co-mot-khong-hai-khi-dau-tu-bds-nghi-duong-tai-khanh-hoa-201808160759251.chn">Chính
                                 sách ưu đãi có một không hai khi đầu tư BĐS nghỉ
                                 dưỡng tại Khánh Hòa</a></h3>
                             <span class="time_post f"><i style="color: indianred" class="fa fa-calendar"></i>&nbsp;Thứ
@@ -246,7 +246,7 @@
                         <div class="col-12 col-md-8">
                             <h3><a class="title-h3" style="font-size: 20px; font-weight:700;"
                                    title=" Tiếp tục rà soát, đánh giá những bất cập liên quan đến tích tụ đất đai"
-                                   href="/tiep-tuc-ra-soat-danh-gia-nhung-bat-cap-lien-quan-den-tich-tu-dat-dai">Tiếp
+                                   href="https://dangcongsan.vn/phap-luat/tiep-tuc-ra-soat-danh-gia-nhung-bat-cap-lien-quan-den-tich-tu-dat-dai-494253.html">Tiếp
                                 tục rà soát, đánh giá những bất cập liên quan đến tích tụ đất đai</a></h3>
                             <span class="time_post f"><i style="color: indianred" class="fa fa-calendar"></i>&nbsp;Thứ
                                     Fri, 17/08/2024
@@ -268,20 +268,20 @@
         </div>
     </div>
     <!-- TIEN TRINH  -->
-    <div class="container text-center">
-        <div class="shop-pag text-xs-right mt-5">
-            <nav class="text-center">
-                <ul class="pagination clearfix justify-content-center">
-                    <li class="page-item disabled"><a class="page-link" href="#">«</a></li>
-                    <li class="active page-item disabled"><a class="page-link" href="javascript:;">1</a></li>
-                    <li class="page-item"><a class="page-link" onclick="doSearch(2)" href="javascript:;">2</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" onclick="doSearch(2)" href="javascript:;">»</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+<%--    <div class="container text-center">--%>
+<%--        <div class="shop-pag text-xs-right mt-5">--%>
+<%--            <nav class="text-center">--%>
+<%--                <ul class="pagination clearfix justify-content-center">--%>
+<%--                    <li class="page-item disabled"><a class="page-link" href="#">«</a></li>--%>
+<%--                    <li class="active page-item disabled"><a class="page-link" href="javascript:;">1</a></li>--%>
+<%--                    <li class="page-item"><a class="page-link" onclick="doSearch(2)" href="javascript:;">2</a>--%>
+<%--                    </li>--%>
+<%--                    <li class="page-item"><a class="page-link" onclick="doSearch(2)" href="javascript:;">»</a>--%>
+<%--                    </li>--%>
+<%--                </ul>--%>
+<%--            </nav>--%>
+<%--        </div>--%>
+<%--    </div>--%>
 </div>
 <!-- FOOTER  -->
 <footer class="footer">
@@ -330,47 +330,38 @@
                 <div class="border-bottom mb-5 mt-4"></div>
             </div>
         </div>
-        <div class="bottom-footer">
+        <div class="bottom-footer container">
             <div class="row">
                 <div class="col-12 col-md-3">
                     <h4 class="title-item-bottom-footer">Thông tin công ty</h4>
-                    <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                        chủ</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                        sản</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                    <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Giới thiệu chung</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Lĩnh vực hoạt động</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Tầm nhìn và sứ mệnh</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Cấu trúc tổ chức</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Thành tựu và giải thưởng</a></p>
                 </div>
                 <div class="col-12 col-md-3">
                     <h4 class="title-item-bottom-footer">Chính sách hoạt động</h4>
-                    <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                        chủ</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                        sản</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                    <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Chính sách bán hàng và tiếp thị</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Chính sách chất lượng</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Chính sách an toàn và bảo mật</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Chính sách chăm sóc khách hàng</a></p>
+
                 </div>
                 <div class="col-12 col-md-3">
                     <h4 class="title-item-bottom-footer">Hỗ trợ khách hàng</h4>
-                    <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                        chủ</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                        sản</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                    <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Tư vấn bất động sản</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Hỗ trợ pháp lý</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Dịch vụ tài chính</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Dịch vụ khảo sát và thẩm định giá</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Hỗ trợ sau giao dịch</a></p>
                 </div>
                 <div class="col-12 col-md-3">
                     <h4 class="title-item-bottom-footer">Kết nối với chúng tôi</h4>
-                    <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                        chủ</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                        sản</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                    <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                    <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Fanpage</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Email</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Hotline</a></p>
+                    <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Địa chỉ</a></p>
                 </div>
             </div>
         </div>

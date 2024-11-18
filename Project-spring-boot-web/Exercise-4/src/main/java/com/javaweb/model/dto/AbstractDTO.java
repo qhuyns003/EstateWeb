@@ -17,7 +17,7 @@ public class AbstractDTO<T> implements Serializable {
 
     // thông tin về phân trang
     // tổng số bản ghi trong 1 trang ( tự thiết lập)
-    private int maxPageItems = 2;
+    private int maxPageItems = 5;
     // trang đang đứng hiên tại ( mặc định là 1 được request update lại)
     private int page = 1;
     // list kết quả cần đẩy ra view

@@ -7,6 +7,7 @@
         <pattern>/access-denied</pattern>
         <pattern>/ckfinder*</pattern>
         <pattern>/logout</pattern>
+
     </excludes>
 
     <decorator name="web" page="web.jsp">
@@ -20,5 +21,6 @@
     <decorator name="login" page="login.jsp">
         <pattern>/login</pattern>
         <pattern>/dang-ki</pattern>
+        <pattern>/dang-cap-nhat</pattern>
     </decorator>
 </decorators>

@@ -281,43 +281,34 @@
                 <div class="row">
                     <div class="col-12 col-md-3">
                         <h4 class="title-item-bottom-footer">Thông tin công ty</h4>
-                        <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                            chủ</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                            sản</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                        <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Giới thiệu chung</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Lĩnh vực hoạt động</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Tầm nhìn và sứ mệnh</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Cấu trúc tổ chức</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Thành tựu và giải thưởng</a></p>
                     </div>
                     <div class="col-12 col-md-3">
                         <h4 class="title-item-bottom-footer">Chính sách hoạt động</h4>
-                        <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                            chủ</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                            sản</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                        <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Chính sách bán hàng và tiếp thị</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Chính sách chất lượng</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Chính sách an toàn và bảo mật</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Chính sách chăm sóc khách hàng</a></p>
+
                     </div>
                     <div class="col-12 col-md-3">
                         <h4 class="title-item-bottom-footer">Hỗ trợ khách hàng</h4>
-                        <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                            chủ</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                            sản</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                        <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Tư vấn bất động sản</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Hỗ trợ pháp lý</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Dịch vụ tài chính</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Dịch vụ khảo sát và thẩm định giá</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Hỗ trợ sau giao dịch</a></p>
                     </div>
                     <div class="col-12 col-md-3">
                         <h4 class="title-item-bottom-footer">Kết nối với chúng tôi</h4>
-                        <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="">Trang
-                            chủ</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Giới thiệu</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Dự án bất động
-                            sản</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Tin tức</a></p>
-                        <p class="desc-item-bottom-footer"><a class="a-text" href="">Liên hệ</a></p>
+                        <p class="desc-item-bottom-footer desc-1"><a class="a-text" href="/dang-cap-nhat">Fanpage</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Email</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Hotline</a></p>
+                        <p class="desc-item-bottom-footer"><a class="a-text" href="/dang-cap-nhat">Địa chỉ</a></p>
                     </div>
                 </div>
             </div>
