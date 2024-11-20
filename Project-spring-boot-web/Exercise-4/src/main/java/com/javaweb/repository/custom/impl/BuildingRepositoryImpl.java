@@ -43,7 +43,7 @@ public class BuildingRepositoryImpl implements BuildingRepositoryCustom {
                 item.setAccessible(true);
                 String fieldName = item.getName();
                 if( !fieldName.equals("staffId") &&!fieldName.startsWith("area")
-                        &&!fieldName.startsWith("price") ) {
+                        &&!fieldName.startsWith("rentPrice") ) {
                     Object value = item.get(buildingSearchRequest);
 
                     if(value!=null&&StringUtils.check(value.toString())) {
