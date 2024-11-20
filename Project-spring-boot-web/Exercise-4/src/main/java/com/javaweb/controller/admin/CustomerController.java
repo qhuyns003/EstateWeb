@@ -70,7 +70,12 @@ public class CustomerController {
         }
         List<CustomerSearchResponse> customerSearchResponse = customerService.findCustomer(customer,PageRequest.of(customer.getPage() - 1, customer.getMaxPageItems()));
         customer.setListResult(customerSearchResponse);
-        customer.setTotalItems(customerSearchResponse.get(0).getTotalItems());
+        if(customerSearchResponse.size()==0){
+            customer.setTotalItems(0);
+        }
+        else{
+            customer.setTotalItems(customerSearchResponse.get(0).getTotalItems());
+        }
         mav.addObject("customer", customer);
         mav.addObject("listStaff", map);
         initMessageResponse(mav, request);

@@ -37,7 +37,12 @@ public class UserController {
 		List<UserDTO> news = userService.getUsers(model.getSearchValue(), PageRequest.of(model.getPage() - 1, model.getMaxPageItems()));
 		model.setListResult(news);
 //		model.setTotalItems(userService.countTotalItems());
-		model.setTotalItems(news.get(0).getTotalItems());
+		if(news.size()==0){
+			model.setTotalItems(0);
+		}
+		else{
+			model.setTotalItems(news.get(0).getTotalItems());
+		}
 		mav.addObject(SystemConstant.MODEL, model);
 		initMessageResponse(mav, request);
 		return mav;

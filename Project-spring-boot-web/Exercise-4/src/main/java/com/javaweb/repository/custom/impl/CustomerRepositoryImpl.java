@@ -35,10 +35,10 @@ public class CustomerRepositoryImpl implements CustomerRepositoryCustom {
             sql.append(" and assignmentcustomer.staffid = "+customerSearchRequest.getStaffId());
         };
         if(customerSearchRequest.getName() != null && StringUtils.check(customerSearchRequest.getName())){
-            sql.append(" and customer.fullname like "+"%"+customerSearchRequest.getName()+"% ");
+            sql.append(" and customer.fullname like "+" '%"+customerSearchRequest.getName()+"%' ");
         };
         if(customerSearchRequest.getEmail() != null && StringUtils.check(customerSearchRequest.getEmail())){
-            sql.append(" and customer.email = "+customerSearchRequest.getEmail());
+            sql.append(" and customer.email like '%"+customerSearchRequest.getEmail()+"%' ");
         };
 
 
