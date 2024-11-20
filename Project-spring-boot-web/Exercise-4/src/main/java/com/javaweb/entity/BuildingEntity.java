@@ -48,6 +48,9 @@ public class BuildingEntity {
     @Column(name = "servicefee")
     private String serviceFee;
 
+    @Column(name = "overtimefee")
+    private String overtimeFee;
+
     @Column(name = "carfee")
     private String carFee;
 
@@ -58,7 +61,10 @@ public class BuildingEntity {
     private String waterFee;
 
     @Column(name = "electricityfee")
-    private String electicityFee;
+    private String electricityFee;
+
+    @Column(name= "brokeragefee")
+    private Double brokerageFee;
 
     @Column(name = "deposit")
     private String deposit;
@@ -70,7 +76,7 @@ public class BuildingEntity {
     private String rentTime;
 
     @Column(name = "decorationtime")
-    private Double decorationTime;
+    private String decorationTime;
 
     @Column(name = "type")
     private String type;
@@ -246,12 +252,12 @@ public class BuildingEntity {
         this.waterFee = waterFee;
     }
 
-    public String getElecticityFee() {
-        return electicityFee;
+    public String getElectricityFee() {
+        return electricityFee;
     }
 
-    public void setElecticityFee(String electicityFee) {
-        this.electicityFee = electicityFee;
+    public void setElectricityFee(String electricityFee) {
+        this.electricityFee = electricityFee;
     }
 
     public String getDeposit() {
@@ -278,11 +284,11 @@ public class BuildingEntity {
         this.rentTime = rentTime;
     }
 
-    public Double getDecorationTime() {
+    public String getDecorationTime() {
         return decorationTime;
     }
 
-    public void setDecorationTime(Double decorationTime) {
+    public void setDecorationTime(String decorationTime) {
         this.decorationTime = decorationTime;
     }
 
@@ -398,4 +404,21 @@ public class BuildingEntity {
     public void setUsers(List<UserEntity> users) {
         this.users = users;
     }
+
+    public Double getBrokerageFee() {
+        return brokerageFee;
+    }
+
+    public void setBrokerageFee(Double brokerageFee) {
+        this.brokerageFee = brokerageFee;
+    }
+
+    public String getOvertimeFee() {
+        return overtimeFee;
+    }
+
+    public void setOvertimeFee(String overtimeFee) {
+        this.overtimeFee = overtimeFee;
+    }
+
 }

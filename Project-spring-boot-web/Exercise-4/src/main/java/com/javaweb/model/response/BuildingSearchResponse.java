@@ -17,6 +17,9 @@ public class BuildingSearchResponse extends AbstractDTO {
     private Long rentPrice;
     private String serviceFee;
     private Double brokerageFee;
+	private String electicityFee;
+	private String overtimeFee;
+
 
 	public Long getId() {
 		return id;
@@ -104,5 +107,21 @@ public class BuildingSearchResponse extends AbstractDTO {
 
 	public void setManagerPhone(String managerPhone) {
 		this.managerPhone = managerPhone;
+	}
+
+	public String getElecticityFee() {
+		return electicityFee;
+	}
+
+	public void setElecticityFee(String electicityFee) {
+		this.electicityFee = electicityFee;
+	}
+
+	public String getOvertimeFee() {
+		return overtimeFee;
+	}
+
+	public void setOvertimeFee(String overtimeFee) {
+		this.overtimeFee = overtimeFee;
 	}
 }
