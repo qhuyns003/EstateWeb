@@ -102,11 +102,11 @@ public BuildingEntity dtoToEntity(BuildingDTO buildingDTOList) {
         RentAreaEntity rentArea = new RentAreaEntity();
         rentArea.setValue(Integer.parseInt(rentAreaString));
         rentArea.setBuilding(buildingEntity); // Thiết lập mối quan hệ mới
-        rentAreaList.add(rentArea);
+        buildingEntity.getRentAreaItems().add(rentArea);
     }
 
     // Cập nhật danh sách rentAreaItems
-    buildingEntity.getRentAreaItems().addAll(rentAreaList); // Thêm các phần tử mới vào danh sách
+//    buildingEntity.setRentAreaItems(rentAreaList); // Thêm các phần tử mới vào danh sách
 
 
 
