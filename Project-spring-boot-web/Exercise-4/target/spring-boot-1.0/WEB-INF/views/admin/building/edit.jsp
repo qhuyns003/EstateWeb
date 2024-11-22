@@ -78,13 +78,13 @@
 
                   </div>
                 </div>
-                <div class="form-group">
-                  <label class="col-xs-3">Kết cấu</label>
-                  <div class="col-xs-9">
-                    <form:input class="form-control" path="structure" />
+<%--                <div class="form-group">--%>
+<%--                  <label class="col-xs-3">Kết cấu</label>--%>
+<%--                  <div class="col-xs-9">--%>
+<%--                    <form:input class="form-control" path="structure" />--%>
 
-                  </div>
-                </div>
+<%--                  </div>--%>
+<%--                </div>--%>
                 <div class="form-group">
                   <label class="col-xs-3">Số tầng hầm </label>
                   <div class="col-xs-9">
@@ -134,13 +134,13 @@
 
                   </div>
                 </div>
-                <div class="form-group">
-                  <label class="col-xs-3">Phí dịch vụ</label>
-                  <div class="col-xs-9">
-                    <form:input class="form-control" path="serviceFee" />
+<%--                <div class="form-group">--%>
+<%--                  <label class="col-xs-3">Phí dịch vụ</label>--%>
+<%--                  <div class="col-xs-9">--%>
+<%--                    <form:input class="form-control" path="serviceFee" />--%>
 
-                  </div>
-                </div>
+<%--                  </div>--%>
+<%--                </div>--%>
                 <div class="form-group">
                   <label class="col-xs-3">Phí ô tô</label>
                   <div class="col-xs-9">
@@ -176,13 +176,13 @@
 
                   </div>
                 </div>
-                <div class="form-group">
-                  <label class="col-xs-3">Thanh toán</label>
-                  <div class="col-xs-9">
-                    <form:input class="form-control" path="payment" />
+<%--                <div class="form-group">--%>
+<%--                  <label class="col-xs-3">Thanh toán</label>--%>
+<%--                  <div class="col-xs-9">--%>
+<%--                    <form:input class="form-control" path="payment" />--%>
 
-                  </div>
-                </div>
+<%--                  </div>--%>
+<%--                </div>--%>
                 <div class="form-group">
                   <label class="col-xs-3">Thời hạn thuê</label>
                   <div class="col-xs-9">

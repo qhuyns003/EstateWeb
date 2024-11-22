@@ -35,7 +35,7 @@ CREATE TABLE `assignmentbuilding` (
                                       KEY `fk_building_user` (`buildingid`),
                                       CONSTRAINT `fk_building_user` FOREIGN KEY (`buildingid`) REFERENCES `building` (`id`),
                                       CONSTRAINT `fk_user_building` FOREIGN KEY (`staffid`) REFERENCES `user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +44,7 @@ CREATE TABLE `assignmentbuilding` (
 
 LOCK TABLES `assignmentbuilding` WRITE;
 /*!40000 ALTER TABLE `assignmentbuilding` DISABLE KEYS */;
-INSERT INTO `assignmentbuilding` VALUES (48,5,35,NULL,NULL,NULL,NULL),(49,2,40,NULL,NULL,NULL,NULL),(50,4,44,NULL,NULL,NULL,NULL);
+INSERT INTO `assignmentbuilding` VALUES (66,2,1,NULL,NULL,NULL,NULL),(67,5,1,NULL,NULL,NULL,NULL),(68,4,2,NULL,NULL,NULL,NULL),(69,4,35,NULL,NULL,NULL,NULL),(70,5,35,NULL,NULL,NULL,NULL),(71,5,36,NULL,NULL,NULL,NULL),(72,2,40,NULL,NULL,NULL,NULL),(73,2,42,NULL,NULL,NULL,NULL),(74,4,42,NULL,NULL,NULL,NULL),(75,2,44,NULL,NULL,NULL,NULL),(76,4,44,NULL,NULL,NULL,NULL),(77,5,44,NULL,NULL,NULL,NULL),(78,5,46,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `assignmentbuilding` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -68,7 +68,7 @@ CREATE TABLE `assignmentcustomer` (
                                       KEY `fk_customer_user` (`customerid`),
                                       CONSTRAINT `fk_customer_user` FOREIGN KEY (`customerid`) REFERENCES `customer` (`id`),
                                       CONSTRAINT `fk_user_customer` FOREIGN KEY (`staffid`) REFERENCES `user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -77,7 +77,7 @@ CREATE TABLE `assignmentcustomer` (
 
 LOCK TABLES `assignmentcustomer` WRITE;
 /*!40000 ALTER TABLE `assignmentcustomer` DISABLE KEYS */;
-INSERT INTO `assignmentcustomer` VALUES (10,2,3,NULL,NULL,NULL,NULL),(12,3,5,NULL,NULL,NULL,NULL),(13,4,5,NULL,NULL,NULL,NULL),(14,2,6,NULL,NULL,NULL,NULL),(15,3,6,NULL,NULL,NULL,NULL),(17,2,2,NULL,NULL,NULL,NULL),(20,5,10,NULL,NULL,NULL,NULL),(21,4,22,NULL,NULL,NULL,NULL);
+INSERT INTO `assignmentcustomer` VALUES (20,5,10,NULL,NULL,NULL,NULL),(29,4,7,NULL,NULL,NULL,NULL),(30,5,7,NULL,NULL,NULL,NULL),(31,2,8,NULL,NULL,NULL,NULL),(32,4,8,NULL,NULL,NULL,NULL),(33,5,8,NULL,NULL,NULL,NULL),(34,2,9,NULL,NULL,NULL,NULL),(35,4,13,NULL,NULL,NULL,NULL),(36,4,15,NULL,NULL,NULL,NULL),(37,5,15,NULL,NULL,NULL,NULL),(38,2,22,NULL,NULL,NULL,NULL),(39,5,23,NULL,NULL,NULL,NULL),(41,4,1,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `assignmentcustomer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -133,7 +133,7 @@ CREATE TABLE `building` (
 
 LOCK TABLES `building` WRITE;
 /*!40000 ALTER TABLE `building` DISABLE KEYS */;
-INSERT INTO `building` VALUES (1,'LunaGalaxy.','Đào Tấn','Ngọc Khánh','BA_DINH','',2,14000,'Bắc','A',400,'400 nghìn/m2/tháng','','2,5 triệu/ tháng','150 nghìn/tháng','200 nghìn/giờ',NULL,NULL,'10%','','>6 tháng','7 ngày',0.50,'TANG_TRET,NGUYEN_CAN','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Anh Nam-Chị Linh','0915354727'),(2,'ACM Tower','Bùi Xương Trạch','Định Công','THANH_XUAN','',2,10500,'Đông','B',250,'250 nghìn/m2/tháng','','1,5 triệu/ tháng','100 nghìn/tháng','150 nghìn/giờ',NULL,NULL,'10%','','>6 tháng','7 ngày',1.70,'NOI_THAT,NGUYEN_CAN','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Chú Thuận','0173546263'),(35,'BID Residence','Phúc La','Kiến Hưng','HA_DONG','',1,9600,'Tây Bắc','C',150,'150 nghìn/m2/tháng','','1 triệu/ tháng','50 nghìn/tháng','100 nghìn/giờ','7 nghìn/m3','3,5 nghìn/kWh','20%','','>6 tháng','10 ngày',0.50,'NOI_THAT,TANG_TRET','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Đức Mỹ','0839555756'),(36,'MipecTower','Nguyễn Cơ Thạch','Mỹ Đình','NAM_TU_LIEM','',1,11200,'Đông Nam','A',350,'350 nghìn/m2/tháng','','2,5 triệu/ tháng','150 nghìn/tháng','220 nghìn/giờ','10 nghìn/m3','4 nghìn/kWh','10%','','>12 tháng','7 ngày',0.80,'NOI_THAT','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Nguyễn Thanh Tuấn','0987263542'),(40,'TechnoPark Tower','Vũ Xuân Thiều','Sài Đồng','LONG_BIEN','',2,12000,'Tây','B',160,'160 nghìn/m2/tháng','','1,5 triệu/ tháng','100 nghìn/tháng','200 nghìn/giờ','7 nghìn/m3','3 nghìn/kWh','10%','','>6 tháng','10 ngày',1.00,'NOI_THAT','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Vũ Ngọc Anh','0938225654'),(42,'Keangnam','Hồ Tùng Mậu','Mai Dịch','CAU_GIAY','',1,15000,'Nam','A',380,'380 nghìn/m2/tháng','','2,5 triệu/ tháng','150 nghìn/tháng','200 nghìn/giờ','6 nghìn/m3','4 nghìn/kWh','10%','','>6 tháng','14 ngày',1.00,'TANG_TRET','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Lã Quốc Đạt','0'),(44,'KwangdongFreegs','Nguyên Hồng','Láng Hạ','DONG_DA','',1,13500,'Đông Bắc','B',180,'180 nghìn/m2/tháng','','1,7 triệu/ tháng','120 nghìn/tháng','180 nghìn/giờ','7 nghìn/m3','4 nghìn/kWh','15%','','>12 tháng','14 ngày',0.40,'NGUYEN_CAN','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Shrimzy','0900293111'),(46,'Millennium Tower','Nguyễn Đình Thi','Thụy Khuê','TAY_HO','',2,21000,'Bắc','A',500,'500 nghìn/m2/tháng','','3 triệu/ tháng','250 nghìn/tháng','300 nghìn/giờ','10 nghìn/m3','5 nghìn/kWh','10%','','>12 tháng','21 ngày',0.50,'NOI_THAT,NGUYEN_CAN','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Aixleft','0900567897');
+INSERT INTO `building` VALUES (1,'LunaGalaxy.','Đào Tấn','Ngọc Khánh','BA_DINH',NULL,2,14000,'Bắc','A',400,'400 nghìn/m2/tháng',NULL,'2,5 triệu/ tháng','150 nghìn/tháng','200 nghìn/giờ',NULL,'4 nghìn/kWh','10%',NULL,'>6 tháng','7 ngày',0.50,'TANG_TRET,NGUYEN_CAN','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Nam Linh','0915354727'),(2,'ACM Tower','Bùi Xương Trạch','Định Công','THANH_XUAN',NULL,2,10500,'Đông','B',250,'250 nghìn/m2/tháng',NULL,'1,5 triệu/ tháng','100 nghìn/tháng','150 nghìn/giờ',NULL,'4 nghìn/kWh','10%',NULL,'>6 tháng','7 ngày',1.70,'NOI_THAT,NGUYEN_CAN','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Chú Thuận','0173546263'),(35,'BID Residence','Phúc La','Kiến Hưng','HA_DONG',NULL,1,9600,'Tây Bắc','C',150,'150 nghìn/m2/tháng',NULL,'1 triệu/ tháng','50 nghìn/tháng','100 nghìn/giờ',NULL,'3,5 nghìn/kWh','20%',NULL,'>6 tháng','10 ngày',0.50,'TANG_TRET,NGUYEN_CAN','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Đức Mỹ','0839555756'),(36,'MipecTower','Nguyễn Cơ Thạch','Mỹ Đình','NAM_TU_LIEM',NULL,1,11200,'Đông Nam','A',350,'350 nghìn/m2/tháng',NULL,'2,5 triệu/ tháng','150 nghìn/tháng','220 nghìn/giờ',NULL,'4 nghìn/kWh','10%',NULL,'>12 tháng','7 ngày',0.80,'NOI_THAT','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Nguyễn Thanh Tuấn','0987263542'),(40,'TechnoPark Tower','Vũ Xuân Thiều','Sài Đồng','LONG_BIEN',NULL,2,12000,'Tây','B',160,'160 nghìn/m2/tháng',NULL,'1,5 triệu/ tháng','100 nghìn/tháng','200 nghìn/giờ',NULL,'3 nghìn/kWh','10%',NULL,'>6 tháng','10 ngày',1.00,'NOI_THAT','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Vũ Ngọc Anh','0938225654'),(42,'Keangnam','Hồ Tùng Mậu','Mai Dịch','CAU_GIAY',NULL,1,15000,'Nam','A',380,'380 nghìn/m2/tháng',NULL,'2,5 triệu/ tháng','150 nghìn/tháng','200 nghìn/giờ',NULL,'4 nghìn/kWh','10%',NULL,'>6 tháng','14 ngày',1.00,'TANG_TRET','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Lã Quốc Đạt','0933457263'),(44,'KwangdongFreegs','Nguyên Hồng','Láng Hạ','DONG_DA',NULL,1,13500,'Đông Bắc','B',180,'180 nghìn/m2/tháng',NULL,'1,7 triệu/ tháng','120 nghìn/tháng','180 nghìn/giờ',NULL,'4 nghìn/kWh','15%',NULL,'>12 tháng','14 ngày',0.40,'NGUYEN_CAN','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Shrimzy','0900293111'),(46,'Millennium Tower','Nguyễn Đình Thi','Thụy Khuê','TAY_HO',NULL,2,21000,'Bắc','A',500,'500 nghìn/m2/tháng',NULL,'3 triệu/ tháng','250 nghìn/tháng','300 nghìn/giờ',NULL,'5 nghìn/kWh','10%',NULL,'>12 tháng','21 ngày',0.50,'NOI_THAT,NGUYEN_CAN','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Aixleft','0900567897');
 /*!40000 ALTER TABLE `building` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -158,7 +158,7 @@ CREATE TABLE `customer` (
                             `createdby` varchar(255) DEFAULT NULL,
                             `modifiedby` varchar(255) DEFAULT NULL,
                             PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -167,7 +167,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES (1,'Đỗ Nam Trung','0905671232','hailv@gmail.com','','',NULL,1,NULL,'2024-10-30 23:10:20',NULL,'nguyenvana'),(2,'Đặng Hoài Bắc','0205671231','hongxuanng@gmail.com','','','xử lý xong',1,NULL,NULL,NULL,NULL),(3,'Tập Cận Bình','0912121231','cucthita1@gmail.com','','','đang xử lý',1,NULL,NULL,NULL,NULL),(4,'Cô Hai Báo','0334839575','dungta@gmail.com','PolygonGroup','','đã xử lý ',1,NULL,'2024-11-17 16:43:56',NULL,'nguyenvana'),(5,'Bùi Hải Đăng','0893736151','haidangbui@gmail.com','Solseven','','đang xử lý',1,NULL,NULL,NULL,NULL),(6,'Đặng Đức Long','0893736151','longdd@gmail.com','','','chờ xử lý',1,NULL,NULL,NULL,NULL),(7,'Vũ Sỹ Ngọc Hiếu','0893736273','hieuvsn@gmail.com','AnThi1','mua nhà lầu','chưa xử lý',1,'2024-10-25 20:36:54','2024-10-25 20:36:54','nguyenvana','nguyenvana'),(8,'Trần Lả Lướt','0334839575','laluottran@gmail.com',NULL,'quan tâm',NULL,1,'2024-10-25 21:57:19','2024-10-25 21:57:19','anonymousUser','anonymousUser'),(9,'Chi Dân','0983554124','youngpuppy@gmail.com','','quan tâm','đã xử lý ',1,NULL,'2024-10-30 23:04:28',NULL,'nguyenvana'),(10,'Trần Hải Băng','0839442681','coldsea@gmail.com','IsnumGroup','thuê nhà ','chưa xử lý',1,'2024-10-27 15:56:27','2024-10-30 23:03:46','nguyenvana','nguyenvana'),(11,'Lê Đức Phú','0839222111','phuducgang@gmail.com',NULL,'quan tâm','chưa xử lý',0,'2024-10-27 15:57:44','2024-10-30 23:01:48','nguyenvana','nguyenvana'),(12,'Phạm Hoàng Khoa','0981245631','krikkonix@gmail.com','Kentertainment','mua nhà','Chưa xử lý ',0,'2024-10-27 16:13:43','2024-10-30 23:01:48','nguyenvana','nguyenvana'),(13,'Nhật Hoàng','0900789568','sunshinejp@gmail.com','KOR','quan tâm','đang xử lý ',1,NULL,'2024-10-30 23:26:38',NULL,'nguyenvana'),(14,'Trần Thiện Thanh Bảo','0123456789','evbRecord@gmail.com','EvBLabels','quan tâm',NULL,0,NULL,'2024-10-30 23:21:36',NULL,'nguyenvana'),(15,'Hàng Lâm Trang Anh','0334867465','suboiondamic@gmail.com','SB','quan tâm','đang xử lý ',1,'2024-10-30 23:24:48','2024-10-30 23:25:35','nguyenvana','nguyenvana'),(22,'Khúc Văn Khuỷu','0900789568','khuctuan@gmail.com',NULL,'hello',NULL,1,'2024-11-02 16:34:55','2024-11-02 16:35:56','anonymousUser','nguyenvana'),(23,'Mason Nguyễn','0659742121','rzmas@gmail.com',NULL,'quan tâm',NULL,1,'2024-11-17 20:11:27','2024-11-17 20:11:27','masonnguyen','masonnguyen');
+INSERT INTO `customer` VALUES (1,'Đỗ Nam Trung','0905671232','hailv@gmail.com',NULL,'Quan tâm','DA_XU_LY',1,NULL,'2024-11-22 20:38:20',NULL,'nguyenvana'),(2,'Đặng Hoài Bắc','0205671231','hongxuanng@gmail.com',NULL,'quan tâm','DA_XU_LY',1,NULL,'2024-11-22 17:46:17',NULL,'nguyenvana'),(3,'Tập Cận Bình','0912121231','cucthita1@gmail.com',NULL,'quan tâm','DANG_XU_LY',1,NULL,'2024-11-22 20:43:48',NULL,'nguyenvana'),(4,'Cô Hai Báo','0334839575','dungta@gmail.com',NULL,'quan tâm','DA_XU_LY',1,NULL,'2024-11-22 17:46:31',NULL,'nguyenvana'),(5,'Bùi Hải Đăng','0893736151','haidangbui@gmail.com',NULL,'quan tâm','CHUA_XU_LY',1,NULL,'2024-11-22 20:44:14',NULL,'nguyenvana'),(6,'Đặng Đức Long','0893736151','longdd@gmail.com',NULL,'quan tâm','DANG_XU_LY',1,NULL,'2024-11-22 17:45:52',NULL,'nguyenvana'),(7,'Vũ Sỹ Ngọc Hiếu','0893736273','hieuvsn@gmail.com','AnThi1','mua nhà lầu','CHUA_XU_LY',1,'2024-10-25 20:36:54','2024-11-22 17:15:41','nguyenvana','nguyenvana'),(8,'Trần Lả Lướt','0334839575','laluottran@gmail.com',NULL,'quan tâm','DANG_XU_LY',1,'2024-10-25 21:57:19','2024-11-22 17:16:25','anonymousUser','nguyenvana'),(9,'Chi Dân','0983554124','youngpuppy@gmail.com',NULL,'quan tâm','DANG_XU_LY',1,NULL,'2024-11-22 17:16:30',NULL,'nguyenvana'),(10,'Trần Hải Băng','0839442681','coldsea@gmail.com','IsnumGroup','thuê nhà ','CHUA_XU_LY',1,'2024-10-27 15:56:27','2024-10-30 23:03:46','nguyenvana','nguyenvana'),(11,'Lê Đức Phú','0839222111','phuducgang@gmail.com',NULL,'quan tâm','CHUA_XU_LY',0,'2024-10-27 15:57:44','2024-10-30 23:01:48','nguyenvana','nguyenvana'),(12,'Phạm Hoàng Khoa','0981245631','krikkonix@gmail.com','Kentertainment','mua nhà','CHUA_XU_LY',0,'2024-10-27 16:13:43','2024-10-30 23:01:48','nguyenvana','nguyenvana'),(13,'Nhật Hoàng','0900789568','sunshinejp@gmail.com','KOR','quan tâm','DANG_XU_LY',1,NULL,'2024-11-22 17:16:40',NULL,'nguyenvana'),(14,'Trần Thiện Thanh Bảo','0123456789','evbRecord@gmail.com','EvBLabels','quan tâm','CHUA_XU_LY',0,NULL,'2024-10-30 23:21:36',NULL,'nguyenvana'),(15,'Hàng Lâm Trang Anh','0334867465','suboiondamic@gmail.com','SB','quan tâm','DANG_XU_LY',1,'2024-10-30 23:24:48','2024-11-22 17:16:47','nguyenvana','nguyenvana'),(22,'Khúc Văn Khuỷu','0900789568','khuctuan@gmail.com',NULL,'hello','DANG_XU_LY',1,'2024-11-02 16:34:55','2024-11-22 17:16:52','anonymousUser','nguyenvana'),(23,'Mason Nguyễn','0659742121','rzmas@gmail.com',NULL,'quan tâm','DANG_XU_LY',1,'2024-11-17 20:11:27','2024-11-22 17:16:56','masonnguyen','nguyenvana'),(24,'Tôi','0983605605','abc@gmail.com',NULL,'hello','DANG_XU_LY',0,'2024-11-22 15:29:35','2024-11-22 15:30:07','masonnguyen','nguyenvana'),(25,'Nguyễn Chí Tôn','0933456789','chitonnguyn@gmail.com','abc','quan tâm','DANG_XU_LY',0,'2024-11-22 15:31:46','2024-11-22 15:31:53','nguyenvana','nguyenvana');
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -189,7 +189,7 @@ CREATE TABLE `rentarea` (
                             PRIMARY KEY (`id`),
                             KEY `rentarea_building` (`buildingid`),
                             CONSTRAINT `rentarea_building` FOREIGN KEY (`buildingid`) REFERENCES `building` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=315 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=535 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -198,7 +198,7 @@ CREATE TABLE `rentarea` (
 
 LOCK TABLES `rentarea` WRITE;
 /*!40000 ALTER TABLE `rentarea` DISABLE KEYS */;
-INSERT INTO `rentarea` VALUES (284,300,35,NULL,NULL,NULL,NULL),(285,500,35,NULL,NULL,NULL,NULL),(286,600,35,NULL,NULL,NULL,NULL),(287,300,36,NULL,NULL,NULL,NULL),(288,400,36,NULL,NULL,NULL,NULL),(289,500,36,NULL,NULL,NULL,NULL),(290,300,40,NULL,NULL,NULL,NULL),(291,500,40,NULL,NULL,NULL,NULL),(292,500,42,NULL,NULL,NULL,NULL),(293,750,42,NULL,NULL,NULL,NULL),(294,1200,42,NULL,NULL,NULL,NULL),(295,300,44,NULL,NULL,NULL,NULL),(296,500,44,NULL,NULL,NULL,NULL),(297,600,44,NULL,NULL,NULL,NULL),(298,100,46,NULL,NULL,NULL,NULL),(299,400,46,NULL,NULL,NULL,NULL),(310,100,1,NULL,NULL,NULL,NULL),(311,200,1,NULL,NULL,NULL,NULL),(312,200,2,NULL,NULL,NULL,NULL),(313,300,2,NULL,NULL,NULL,NULL),(314,400,2,NULL,NULL,NULL,NULL);
+INSERT INTO `rentarea` VALUES (338,40,2,NULL,NULL,NULL,NULL),(339,50,2,NULL,NULL,NULL,NULL),(340,100,2,NULL,NULL,NULL,NULL),(341,200,2,NULL,NULL,NULL,NULL),(342,40,35,NULL,NULL,NULL,NULL),(343,60,35,NULL,NULL,NULL,NULL),(344,250,35,NULL,NULL,NULL,NULL),(345,85,36,NULL,NULL,NULL,NULL),(346,100,36,NULL,NULL,NULL,NULL),(347,200,36,NULL,NULL,NULL,NULL),(348,400,36,NULL,NULL,NULL,NULL),(349,70,40,NULL,NULL,NULL,NULL),(350,90,40,NULL,NULL,NULL,NULL),(351,90,42,NULL,NULL,NULL,NULL),(352,125,42,NULL,NULL,NULL,NULL),(353,300,42,NULL,NULL,NULL,NULL),(354,75,44,NULL,NULL,NULL,NULL),(355,95,44,NULL,NULL,NULL,NULL),(356,250,44,NULL,NULL,NULL,NULL),(357,90,46,NULL,NULL,NULL,NULL),(358,100,46,NULL,NULL,NULL,NULL),(359,125,46,NULL,NULL,NULL,NULL),(360,140,46,NULL,NULL,NULL,NULL),(361,250,46,NULL,NULL,NULL,NULL),(362,400,46,NULL,NULL,NULL,NULL),(531,80,1,NULL,NULL,NULL,NULL),(532,120,1,NULL,NULL,NULL,NULL),(533,200,1,NULL,NULL,NULL,NULL),(534,5000,1,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `rentarea` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -251,7 +251,7 @@ CREATE TABLE `transaction` (
                                PRIMARY KEY (`id`),
                                KEY `fk_customer_transaction` (`customerid`),
                                CONSTRAINT `fk_customer_transaction` FOREIGN KEY (`customerid`) REFERENCES `customer` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -260,7 +260,7 @@ CREATE TABLE `transaction` (
 
 LOCK TABLES `transaction` WRITE;
 /*!40000 ALTER TABLE `transaction` DISABLE KEYS */;
-INSERT INTO `transaction` VALUES (10,'CSKH','tư vấn trực tiếp',6,'2024-10-21 23:22:38',NULL,'nguyen van a',NULL,NULL),(14,'CSKH','tư vấn trực tiếp',2,'2024-10-22 11:22:54','2024-10-22 11:23:51','nguyen van b','nguyen van a',NULL),(15,'CSKH','tư vấn online',3,'2024-10-25 17:55:48','2024-10-25 17:56:09','nguyenvana','nguyenvana',NULL),(16,'CSKH','gọi điện tư vấn',8,'2024-10-30 23:05:00','2024-10-30 23:05:00','nguyenvana','nguyenvana',NULL),(17,'DDX','di an trua',2,'2024-10-31 10:50:24','2024-10-31 10:50:24','nguyenvana','nguyenvana',NULL),(18,'DDX','đi ăn tối',2,'2024-10-31 10:51:10','2024-10-31 10:51:10','nguyenvana','nguyenvana',NULL);
+INSERT INTO `transaction` VALUES (19,'CSKH','gọi điện tư vấn',1,'2024-11-22 20:43:09','2024-11-22 20:43:09','nguyenvana','nguyenvana',NULL),(20,'DDX','đi xem tòa ACM',1,'2024-11-22 20:43:30','2024-11-22 20:43:30','nguyenvana','nguyenvana',NULL),(21,'CSKH','tư vấn trực tiếp',3,'2024-11-22 20:43:46','2024-11-22 20:43:46','nguyenvana','nguyenvana',NULL),(22,'CSKH','gọi điện tư vấn',5,'2024-11-22 20:44:00','2024-11-22 20:44:00','nguyenvana','nguyenvana',NULL);
 /*!40000 ALTER TABLE `transaction` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -294,7 +294,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'nguyenvana','$2a$10$/RUbuT9KIqk6f8enaTQiLOXzhnUkiwEJRdtzdrMXXwU7dgnLKTCYG','nguyen van a',NULL,NULL,1,NULL,NULL,NULL,NULL),(2,'nguyenvanb','$2a$10$hz7lDDQT.cHYdFMqg9nLouMLtFLpRiq/tmJfOLpkPzQoGzb0ycM5.','nguyen van b',NULL,NULL,1,NULL,'2024-11-02 11:09:49',NULL,'nguyenvana'),(3,'nguyenvanc','$2a$10$/RUbuT9KIqk6f8enaTQiLOXzhnUkiwEJRdtzdrMXXwU7dgnLKTCYG','nguyen van c',NULL,NULL,1,NULL,NULL,NULL,NULL),(4,'nguyenvand','$2a$10$/RUbuT9KIqk6f8enaTQiLOXzhnUkiwEJRdtzdrMXXwU7dgnLKTCYG','nguyen van d',NULL,NULL,1,NULL,NULL,NULL,NULL),(5,'salilvan','$2a$10$q624kNhErPVswJL1pDAOXudFL4OaW7y.qkilJzlEEdx1J.FfvotNq','Lưu Vân',NULL,NULL,1,'2024-10-28 17:09:51','2024-10-28 17:09:51','anonymousUser','anonymousUser'),(6,'masonnguyen','$2a$10$D2Fr75UzSuTVLXrC2z7sO.dQSB1Yt/Oq/jXDa1k6O1wFazUQgxNxG','Nguyễn Xuân Bách',NULL,NULL,1,'2024-10-28 22:12:46','2024-10-28 22:12:46','anonymousUser','anonymousUser'),(7,'ngockhanhnguyen','$2a$10$lyw2DZVhAkEIhh6QwXnueeymzNuF1hnSTBDMV5AKJbeG096Wu/m7G','Nguyễn Ngọc Khánh',NULL,NULL,0,'2024-11-01 16:25:04','2024-11-05 16:58:42','anonymousUser','nguyenvana'),(8,'hieudc','$2a$10$vb/epjLzEwNKxLStZYDMC.4Pg63v1xOhaQUoRTeFMYB8sgf.yBzzm','Đinh Chí Hiếu',NULL,NULL,1,'2024-11-04 16:35:17','2024-11-04 16:35:17','anonymousUser','anonymousUser');
+INSERT INTO `user` VALUES (1,'nguyenvana','$2a$10$/RUbuT9KIqk6f8enaTQiLOXzhnUkiwEJRdtzdrMXXwU7dgnLKTCYG','nguyen van a',NULL,NULL,1,NULL,NULL,NULL,NULL),(2,'nguyenvanb','$2a$10$a3e.C7zCg/BCHd63xA3UbupyVQKXaNyVD8BSgkeogtQR3s7/JPV7a','nguyen van b',NULL,NULL,1,NULL,'2024-11-22 15:19:48',NULL,'nguyenvana'),(3,'nguyenvanc','$2a$10$/RUbuT9KIqk6f8enaTQiLOXzhnUkiwEJRdtzdrMXXwU7dgnLKTCYG','nguyen van c',NULL,NULL,1,NULL,NULL,NULL,NULL),(4,'nguyenvand','$2a$10$/RUbuT9KIqk6f8enaTQiLOXzhnUkiwEJRdtzdrMXXwU7dgnLKTCYG','nguyen van d',NULL,NULL,1,NULL,NULL,NULL,NULL),(5,'salilvan','$2a$10$q624kNhErPVswJL1pDAOXudFL4OaW7y.qkilJzlEEdx1J.FfvotNq','Lưu Vân',NULL,NULL,1,'2024-10-28 17:09:51','2024-10-28 17:09:51','anonymousUser','anonymousUser'),(6,'masonnguyen','$2a$10$D2Fr75UzSuTVLXrC2z7sO.dQSB1Yt/Oq/jXDa1k6O1wFazUQgxNxG','Nguyễn Xuân Bách',NULL,NULL,1,'2024-10-28 22:12:46','2024-10-28 22:12:46','anonymousUser','anonymousUser'),(7,'ngockhanhnguyen','$2a$10$lyw2DZVhAkEIhh6QwXnueeymzNuF1hnSTBDMV5AKJbeG096Wu/m7G','Nguyễn Ngọc Khánh',NULL,NULL,0,'2024-11-01 16:25:04','2024-11-05 16:58:42','anonymousUser','nguyenvana'),(8,'hieudc','$2a$10$vb/epjLzEwNKxLStZYDMC.4Pg63v1xOhaQUoRTeFMYB8sgf.yBzzm','Đinh Chí Hiếu',NULL,NULL,1,'2024-11-04 16:35:17','2024-11-04 16:35:17','anonymousUser','anonymousUser');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -318,7 +318,7 @@ CREATE TABLE `user_role` (
                              KEY `fk_role_user` (`role_id`),
                              CONSTRAINT `fk_role_user` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`),
                              CONSTRAINT `fk_user_role` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -327,7 +327,7 @@ CREATE TABLE `user_role` (
 
 LOCK TABLES `user_role` WRITE;
 /*!40000 ALTER TABLE `user_role` DISABLE KEYS */;
-INSERT INTO `user_role` VALUES (1,1,1,NULL,NULL,NULL,NULL),(4,2,4,NULL,NULL,NULL,NULL),(5,2,5,NULL,NULL,NULL,NULL),(6,3,6,NULL,NULL,NULL,NULL),(13,3,7,NULL,NULL,NULL,NULL),(15,3,3,NULL,NULL,NULL,NULL),(16,2,2,NULL,NULL,NULL,NULL),(17,3,8,NULL,NULL,NULL,NULL);
+INSERT INTO `user_role` VALUES (1,1,1,NULL,NULL,NULL,NULL),(4,2,4,NULL,NULL,NULL,NULL),(5,2,5,NULL,NULL,NULL,NULL),(6,3,6,NULL,NULL,NULL,NULL),(13,3,7,NULL,NULL,NULL,NULL),(15,3,3,NULL,NULL,NULL,NULL),(17,3,8,NULL,NULL,NULL,NULL),(19,2,2,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `user_role` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -340,4 +340,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-11-20 20:02:31
+-- Dump completed on 2024-11-22 20:44:43

@@ -131,7 +131,7 @@
                         </div>
                         <input type="text" name="phone" class="form-control mt-3" placeholder="Số điện thoại">
                         <input type="text" name="demand" class="form-control mt-3" placeholder="Nội dung">
-                        <input type="hidden" name="status" value="chưa xử lý">
+                        <input type="hidden" name="status" value="CHUA_XU_LY">
                         <button class="btn btn-primary px-4 mt-3" id="sendContact">
                             Gửi liên hệ
                         </button>

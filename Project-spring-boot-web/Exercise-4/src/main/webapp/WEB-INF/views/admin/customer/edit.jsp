@@ -69,13 +69,13 @@
 
                   </div>
                 </div>
-                <div class="form-group">
-                  <label class="col-xs-3">Tên công ty</label>
-                  <div class="col-xs-9">
-                    <form:input class="form-control" path="companyName" />
+<%--                <div class="form-group">--%>
+<%--                  <label class="col-xs-3">Tên công ty</label>--%>
+<%--                  <div class="col-xs-9">--%>
+<%--                    <form:input class="form-control" path="companyName" />--%>
 
-                  </div>
-                </div>
+<%--                  </div>--%>
+<%--                </div>--%>
                 <div class="form-group">
                   <label class="col-xs-3">Nhu cầu</label>
                   <div class="col-xs-9">

@@ -63,10 +63,15 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void addOrUpdate(CustomerDTO customerDTO) {
-
-        CustomerEntity customerEntity = modelMapper.map(customerDTO, CustomerEntity.class);
-//        modelMapper.map(customerDTO,customerEntity);
-        customerEntity.setStatus(statusType.type().get(customerEntity.getStatus()));
+        CustomerEntity customerEntity = new CustomerEntity();
+        if(customerDTO.getId()==null) {
+            customerEntity = modelMapper.map(customerDTO, CustomerEntity.class);
+        }
+        else {
+            customerEntity = customerRepository.findById(customerDTO.getId()).get();
+             modelMapper.map(customerDTO,customerEntity);
+        }
+        customerEntity.setStatus(customerEntity.getStatus());
         customerEntity.setIsActive(1);
         customerRepository.save(customerEntity);
 
