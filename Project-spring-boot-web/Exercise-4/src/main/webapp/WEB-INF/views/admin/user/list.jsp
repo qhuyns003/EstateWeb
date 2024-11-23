@@ -141,7 +141,7 @@
                                                        id="checkbox_${tableList.id}" class="check-box-element"/>
                                             </fieldset>
                                         </display:column>
-                                        <display:column headerClass="text-left" property="userName" title="Tên"/>
+                                        <display:column headerClass="text-left" property="userName" title="Username"/>
                                         <display:column headerClass="text-left" property="fullName" title="full name"/>
                                         <display:column headerClass="col-actions" title="Thao tác">
                                             <c:if test="${tableList.roleCode != 'MANAGER'}">

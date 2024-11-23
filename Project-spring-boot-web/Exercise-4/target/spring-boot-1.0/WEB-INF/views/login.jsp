@@ -40,7 +40,7 @@
 												<p class="text-white-50 mb-5">Please enter your login and password!</p>
 												<form action="j_spring_security_check" id="formLogin" method="post">
 												<div class="form-outline form-white mb-4">
-													<label class="form-label" for="userName">Email</label>
+													<label class="form-label" for="userName">Username</label>
 													<input type="text" class="form-control" id="userName" name="j_username" placeholder="Tên đăng nhập">
 												</div>
 
