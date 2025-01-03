@@ -258,7 +258,8 @@
   </div><!-- /.main-content -->
 
 <script>
-  $('#btnAddOrUpdateBuilding').click(function(){
+  $('#btnAddOrUpdateBuilding').click(function(e){
+    e.preventDefault();
     var data ={};
     var typeCode = [];
     var formData = $('#listForm').serializeArray();
@@ -277,12 +278,14 @@
 
   });
   function addOrUpdateBuilding(data){
+
     $.ajax({
         type: "POST",
         url: "${buildingAPI}",
         data: JSON.stringify(data),
         contentType: "application/json",
-        success: function(respond){
+        success: function(response){
+
           alert("Thành công");
           window.location.href="/admin/building-list";
         },
